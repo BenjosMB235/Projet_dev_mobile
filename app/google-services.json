@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1081658845209",
+    "project_id": "mit-plateform",
+    "storage_bucket": "mit-plateform.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081658845209:android:2742a704fca8228f57e288",
+        "android_client_info": {
+          "package_name": "com.example.mit_plateform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081658845209-fc00qpkv3fr57r054dgii58940h16a11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mit_plateform",
+            "certificate_hash": "a773bf48e02c2ddf8497295bb6dcc6f54e8228ce"
+          }
+        },
+        {
+          "client_id": "1081658845209-1bmaqssr0ch5qrr4hv6s433bb19jubbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKR4TeKZHZ0haYYGhYeT-9OclMu0egHD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081658845209-1bmaqssr0ch5qrr4hv6s433bb19jubbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activity.Formulaire_Pre_Inscription">
+
+    <!-- Bande en-tête incluse -->
+    <include layout="@layout/mit_header" />
+
+    <!-- Titre avec bouton retour -->
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Retour"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pré-inscription"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- ScrollView pour contenu principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_above="@id/bottom_nav"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profil Personnel :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/bleu_royal"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/nom_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Nom"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/prenom_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Prénom"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/date_naissance_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Date de naissance"
+                android:inputType="date"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexe :"
+                android:textColor="@color/bleu_royal"
+                android:layout_marginBottom="4dp"/>
+
+            <RadioGroup
+                android:id="@+id/sexe_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:layout_marginEnd="16dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/nationalite_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Nationalité"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Photo :"
+                android:textColor="@color/bleu_royal"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/upload_photo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Ajouter une photo"
+                android:drawableLeft="@drawable/ic_upload"
+                android:drawableTint="@color/blue_gradient"
+                android:drawablePadding="8dp"
+                android:backgroundTint="@color/gray"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coordonnées :"
+                android:textColor="@color/bleu_royal"
+                android:textStyle="italic"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/adresse_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Adresse"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/telephone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Téléphone"
+                android:inputType="phone"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_background"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choix de formation :"
+                android:textColor="@color/bleu_royal"
+                android:textStyle="italic"
+                android:layout_marginBottom="8dp"/>
+
+            <Spinner
+                android:id="@+id/filiere_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pièces justificatifs :"
+                android:textColor="@color/bleu_royal"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Diplômes, Relevé de la dernière année)"
+                android:textColor="@color/bleu_royal"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/select_file"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Joindre un fichier"
+                android:drawableLeft="@drawable/ic_upload"
+                android:drawableTint="@color/blue_gradient"
+                android:drawablePadding="8dp"
+                android:backgroundTint="@color/gray"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:id="@+id/certification_check_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Je certifie que toutes ces informations sont vraies"
+                android:textColor="@color/bleu_royal"
+                android:layout_marginBottom="16dp"/>
+
+            <FrameLayout
+                android:id="@+id/layoutConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/valider_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="VALIDER"
+                    android:backgroundTint="#062D57"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barre de navigation inférieure -->
+    <include layout="@layout/bottom_navigation"/>
+</RelativeLayout>

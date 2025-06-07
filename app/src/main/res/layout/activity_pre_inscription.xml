@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".Activity.Pre_inscription">
+
+    <!-- Bande en-tête incluse -->
+    <include layout="@layout/mit_header" />
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Retour"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/titre_inscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processus d’inscription"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Section liste des étapes -->
+    <LinearLayout
+        android:id="@+id/etapes_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="8dp">
+
+        <!-- Étape 1 -->
+        <LinearLayout
+            android:id="@+id/etape_pre_inscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Pré-inscription"
+                android:textColor="@color/bleu_royal"
+                android:textStyle="italic"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/pre_check"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_check"
+                app:tint="@android:color/holo_green_dark" />
+
+            <ImageView
+                android:id="@+id/pre_hourglass"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_hourglass"
+                app:tint="@android:color/darker_gray" />
+
+            <ImageView
+                android:id="@+id/pre_block"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_block"
+                app:tint="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <!-- Étape 2 -->
+        <LinearLayout
+            android:id="@+id/etape_post_soumission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Post-Soumission"
+                android:textStyle="italic"
+                android:textColor="@color/bleu_royal"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/post_check"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_check"
+                app:tint="@android:color/holo_green_dark" />
+
+            <ImageView
+                android:id="@+id/post_hourglass"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_hourglass"
+                app:tint="@android:color/darker_gray" />
+
+            <ImageView
+                android:id="@+id/post_block"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_block"
+                app:tint="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <!-- Étape 3 -->
+        <LinearLayout
+            android:id="@+id/etape_paiement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Paiement"
+                android:textStyle="italic"
+                android:textColor="@color/bleu_royal"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/paiement_check"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_check"
+                app:tint="@android:color/holo_green_dark" />
+
+            <ImageView
+                android:id="@+id/paiement_hourglass"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_hourglass"
+                app:tint="@android:color/darker_gray" />
+
+            <ImageView
+                android:id="@+id/paiement_block"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="0.66"
+                android:src="@drawable/ic_block"
+                app:tint="@android:color/holo_red_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Barre de navigation inférieure -->
+    <include layout="@layout/bottom_navigation"/>
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activity.ViewPreInscriptionCopy">
+
+    <!-- En-tête avec bouton retour -->
+    <include layout="@layout/mit_header" />
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Retour"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copie de pré-inscription"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Contenu principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
+        android:layout_below="@id/title_bar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Photo de profil -->
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/circle_background"
+                android:contentDescription="Photo de profil"
+                android:scaleType="centerCrop" />
+
+            <!-- Numéro de dossier -->
+            <TextView
+                android:id="@+id/tv_dossier_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textColor="@color/bleu_royal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Date de soumission -->
+            <TextView
+                android:id="@+id/tv_submission_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Section Informations Personnelles -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Informations Personnelles"
+                android:textColor="@color/bleu_royal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    android:id="@+id/tv_nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Nom: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_prenom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Prénom: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_date_naissance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Date de naissance: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_sexe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Sexe: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_nationalite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nationalité: "
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Section Coordonnées -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Coordonnées"
+                android:textColor="@color/bleu_royal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@drawable/card_background">
+
+                <TextView
+                    android:id="@+id/tv_adresse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Adresse: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Téléphone: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Section Formation -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Formation"
+                android:textColor="@color/bleu_royal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@drawable/card_background2">
+
+                <TextView
+                    android:id="@+id/tv_filiere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filière choisie: "
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Bouton pour voir le document joint -->
+            <Button
+                android:id="@+id/btn_view_document"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/bleu_royal"
+                android:drawableLeft="@drawable/ic_document"
+                android:drawableTint="@android:color/white"
+                android:text="Voir le document joint"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barre de navigation inférieure -->
+    <include layout="@layout/bottom_navigation" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MIT_Plateform</string>
+    <string name="default_web_client_id">VOTRE_CLIENT_ID_GOOGLE</string>
+    <string name="facebook_app_id">VOTRE_APP_ID_FACEBOOK</string>
+    <string name="facebook_client_token">VOTRE_CLIENT_TOKEN_FACEBOOK</string>
+</resources>

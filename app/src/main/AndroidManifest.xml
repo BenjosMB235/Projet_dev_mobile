@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher3_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MIT_Plateform"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.ViewPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ViewPreInscriptionCopy"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PreInscriptionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfilAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NotificationsAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DashboardInscriptions"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DashboardMessages"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditProfil"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.Profil"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Notification"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Paiement"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Post_Soumission"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Formulaire_Pre_Inscription"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Pre_inscription"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Home"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.verification_mail"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Inscription"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Connexion"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
